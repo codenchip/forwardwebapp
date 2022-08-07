@@ -1,0 +1,23 @@
+{% extends "hello_world/base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to the Forward School !</h1>
+    {% if all_users %}
+      <table class="table table-bordered">
+        {% for row in all_users %}
+        <tr>
+            <td>{{row.user.username}}</td>
+            <td>{{row.occupation}}</td>
+            <td>{{row.hobby}}</td>
+            <td>{{row.company}}</td>
+            <td>{{row.user.last_login}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+        <h2>Register or Login if you'd like to</h2>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
