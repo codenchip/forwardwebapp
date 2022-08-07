@@ -1,0 +1,24 @@
+asgiref==3.5.2
+certifi @ file:///C:/Windows/TEMP/abs_e9b7158a-aa56-4a5b-87b6-c00d295b01fanefpc8_o/croots/recipe/certifi_1655968940823/work/certifi
+cycler==0.11.0
+Django==4.1
+django-tables2==2.4.1
+djangorestframework==3.13.1
+fonttools==4.34.4
+kiwisolver==1.4.4
+matplotlib==3.5.2
+numpy==1.23.1
+packaging==21.3
+pandas==1.4.3
+Pillow==9.2.0
+plotly==5.9.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2022.1
+scipy==1.9.0
+seaborn==0.11.2
+six==1.16.0
+sqlparse==0.4.2
+tenacity==8.0.1
+tzdata==2022.1
+wincertstore==0.2
