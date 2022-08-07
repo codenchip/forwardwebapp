@@ -1,0 +1,12 @@
+{% extends "combine/base.html" %}
+{% block body_block %}
+<div class="container-fluid">
+    <center class="row">
+        <h2>Our Implementation of <b>Plot.ly</b> in Django</h2>
+    </center>
+    <hr>
+    {% autoescape off %}
+    {{ plot_div }}
+    {% endautoescape %}
+</div>
+{% endblock %}

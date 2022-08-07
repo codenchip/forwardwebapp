@@ -11,9 +11,9 @@ urlpatterns=[
     path('getgraph/',views.Api.getGraph, name='get-graph'),
     path('getdata/',views.Api.getData, name='get-data'),
     path('get-seaborn-graph/',views.Api.getSeabornGraph, name='get-seaborn-graph'),
-    # path('chart/',views.HomeView.as_view(), name='home-view'),
-    # path('chart-api/',views.ChartData.as_view(), name='chart-api'),
-    # path('plotly-chart/',views.PlotlyChartView.as_view(), name='plotly-chart'),
-    # path('book-table/',views.BookTableView.as_view()),
-    # path('user-table/',views.UserTableView.as_view())
+    path('chart/',views.HomeView.as_view(), name='home-view'),
+    path('chart-api/',views.ChartData.as_view(), name='chart-api'),
+    path('plotly-chart/',views.PlotlyChartView.as_view(), name='plotly-chart'),
+    path('book-table/',views.BookTableView.as_view()),
+    path('user-table/',views.UserTableView.as_view())
 ]
