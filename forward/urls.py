@@ -16,17 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path,re_path
-from hello_world import views
+from hello_world import views as helloworldview
+from book import views as bookview
 from forward.settings import DEBUG, STATIC_URL, STATIC_DIR, MEDIA_URL,MEDIA_ROOT
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    re_path(r'^$',views.index,name='index'),
-    re_path(r'^special/',views.special,name='special'),
+    re_path(r'^$',helloworldview.index,name='index'),
+    re_path(r'^special/',helloworldview.special,name='special'),
     re_path(r'^hello_world/',include('hello_world.urls')),
     re_path(r'^book/',include('book.urls')),
-    re_path(r'^logout/$', views.user_logout, name='logout'),
+    re_path(r'^combine/',include('combine.urls')),
+    re_path(r'^logout/$', helloworldview.user_logout, name='logout'),
 ]
 
 if DEBUG:
